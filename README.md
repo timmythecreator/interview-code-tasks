@@ -1,4 +1,4 @@
-# Live coding/algorithms asked in the interview
+# Live Coding & Algorithms from Interviews
 
 This repository contains a collection of tasks I was asked during interviews for QA Automation positions. These include live coding challenges, refactoring exercises, and algorithmic problems.
 
