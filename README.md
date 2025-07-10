@@ -1,15 +1,15 @@
-# interview-algorithms
+# Live coding/algorithms asked in the interview
 
-Here is my storage of algorithms that were asked in interviews or I found on the internet that seem interesting to me.
+This repository contains a collection of tasks I was asked during interviews for QA Automation positions. These include live coding challenges, refactoring exercises, and algorithmic problems.
 
 ## About This Repository
 
-- This is a casual collection without a strict structure (for now, at least).
-- I might organize it better later, but no promises!
-- You'll find algorithms implemented in various languages:
+- This is a casual collection without a strict structure.
+- No names of companies or interviewers are included
+- Tasks are implemented in various languages:
   - Go
   - C
   - C++
   - Python
 
-Feel free to explore, but don't expect a super organized layout. This is more of a personal playground for interesting algorithmic stuff I come across.
+Feel free to explore! Keep in mind that this is more of a personal playground than a polished or well-organized project.
