@@ -94,3 +94,19 @@ print(add_num(78)) # Output: {23, 78}
 # 1. add_num(23) → uses default set(), becomes {23}
 # 2. add_num(12, set([1, 2])) → uses a NEW set, returns {1, 2, 12}
 # 3. add_num(78) → uses the same default set as in (1), now becomes {23, 78}
+
+# ======================== Example 5: try-finally with return ========================
+# TASK:
+# What will be printed by the following code?
+def func():
+  try:
+    return 1
+  finally:
+    return 2
+
+print(func()) # Output: 2
+
+# EXPLANATION:
+# In Python, the finally block always executes after try, even if there is a return statement in try.
+# The return value from the finally block overrides the one from try.
+# It will remember the return value from try, but the finally block will execute and return 2.
