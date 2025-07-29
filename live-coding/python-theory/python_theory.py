@@ -1,7 +1,7 @@
-'''
+"""
 File with Python theory concepts and examples.
 Includes small tasks with explanations and expected outputs.
-'''
+"""
 
 # ======================== Example 1: MRO ========================
 # TASK:
