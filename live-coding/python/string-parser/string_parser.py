@@ -1,9 +1,9 @@
-'''
+"""
 TASK:
 We have the string with format: "value=Example.1|897=890|Client1=Alex|Employer=Bank|897=890|date=2023.8.23 13:89|\nvalue=Example.1|Employer=Hospital"
 Write a function that parses this string and prints stats in the format:
 tag '{tag}' is used '{num}' times per '{num_lines}' lines and has values '{values}'
-'''
+"""
 
 # Solution:
 def string_parser(data: str) -> None:
