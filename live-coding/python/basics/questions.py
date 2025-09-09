@@ -3,7 +3,7 @@ File with Python theory concepts and examples.
 Includes small tasks with explanations and expected outputs.
 """
 
-# ======================== Example 1: MRO ========================
+# ======================== Question 1: MRO ========================
 # TASK:
 # What will be printed on the screen by the following code?
 class A:
@@ -33,7 +33,7 @@ d.rk() # Output: In class B
 # So, Python looks for rk() in class D → not found
 # Then in B → found: prints "In class B"
 
-# ======================== Example 2: Walrus Operator ========================
+# ======================== Question 2: Walrus Operator ========================
 # TASK:
 # What will the following code print?
 if i := 5 > 0:
@@ -48,7 +48,7 @@ if i := 5 > 0:
 if (i := 5) > 0:
     print(i) # Output: 5
 
-# ======================== Example 4: How set() works ========================
+# ======================== Question 4: How set() works ========================
 # TASK:
 # What will be printed by the following code?
 
@@ -68,7 +68,7 @@ print(add_num(78)) # Output: {23, 78}
 # 2. add_num(12, set([1, 2])) → uses a NEW set, returns {1, 2, 12}
 # 3. add_num(78) → uses the same default set as in (1), now becomes {23, 78}
 
-# ======================== Example 5: try-finally with return ========================
+# ======================== Question 5: try-finally with return ========================
 # TASK:
 # What will be printed by the following code?
 def func():
@@ -83,3 +83,16 @@ print(func()) # Output: 2
 # In Python, the finally block always executes after try, even if there is a return statement in try.
 # The return value from the finally block overrides the one from try.
 # It will remember the return value from try, but the finally block will execute and return 2.
+
+# ======================== Question 6: Dict keys ========================
+# TASK:
+# What data types can be used as keys in a Python dict? What happens if we use a tuple that contains a list inside?
+
+# EXPLANATION:
+# Keys must be objects that support hashing (__hash__), equality comparison (__eq__ or __cmp__),
+# and follow the rule: if a == b then hash(a) == hash(b). More: https://wiki.python.org/moin/DictionaryKeys
+# If a tuple contains a mutable element (like list), it becomes unhashable and raises a TypeError.
+#
+# Example:
+# d = {}
+# d[(1, [2, 3])] = "value"   # TypeError: unhashable type: 'list'
